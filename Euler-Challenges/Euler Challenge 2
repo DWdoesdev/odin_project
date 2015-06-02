@@ -1,0 +1,13 @@
+var first = 1;
+var second =2;
+var sum = first+second;
+var totalSum=0;
+while(first+second<4000000){
+    if(sum % 2 === 0){
+        totalSum += sum;
+    };
+    first = second;
+    second = sum;
+    sum = first + second;
+};
+alert(totalSum);
